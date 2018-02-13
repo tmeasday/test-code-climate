@@ -1,6 +1,14 @@
 function foo() {
   if (something && somethingElse || bar) {
-    if (innerThing) {
+    if (innerThing || secondThing && thirdThing) {
+      return whatIt || foobar;
+    }
+  }
+}
+
+function bar() {
+  if (something && somethingElse || bar) {
+    if (innerThing || secondThing && thirdThing) {
       return whatIt || foobar;
     }
   }
